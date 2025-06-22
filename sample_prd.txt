@@ -1,0 +1,32 @@
+
+📄 Sample PRD: Interview Monitoring Tool
+
+1. Overview
+The Interview Monitoring Tool is designed to assist organizations in ensuring integrity during remote interviews by using AI-powered gaze tracking, face detection, and behavior analysis.
+
+2. Objectives
+- Detect gaze deviation and face absence.
+- Generate summary reports and logs.
+- Provide a professional and user-friendly web interface.
+- Support video file uploads for post-interview analysis.
+
+3. Functional Requirements
+- FR1: The tool must allow the user to upload `.mp4`, `.mkv`, or `.avi` video files.
+- FR2: The system must detect if the candidate’s gaze is away from the screen for more than 5 seconds.
+- FR3: The system must log each gaze deviation event in a `focus_log.txt` file.
+- FR4: The tool must detect face absence and log the duration.
+- FR5: A session summary must be generated at the end in a `session_summary.txt`.
+- FR6: The interface must show alerts in the video window in real time if possible.
+
+4. Non-Functional Requirements
+- NFR1: All logs and summaries must be downloadable.
+- NFR2: The tool must analyze 10-minute video in under 2 minutes.
+- NFR3: The tool must work in modern browsers.
+
+5. Constraints
+- The tool must run locally or on a secure internal server.
+- It must not share video data externally.
+
+6. Future Scope
+- Integration as a Zoom bot.
+- Real-time dashboard for live monitoring.
